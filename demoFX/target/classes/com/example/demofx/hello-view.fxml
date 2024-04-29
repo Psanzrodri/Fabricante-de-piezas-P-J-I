@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demofx.LoginController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView id="brandingImageView" fitHeight="409.0" fitWidth="309.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Images/KitCar.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="322.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="24.0" layoutY="121.0" text="Usuario">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField id="usuarioTextField" layoutX="24.0" layoutY="148.0" onAction="#loginButtonOnAction" prefHeight="26.0" prefWidth="182.0" promptText="Usuario" style="-fx-border-color: #f24e1e;" />
+            <Label layoutX="25.0" layoutY="185.0" text="Contraseña">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <PasswordField id="contraseñaPasswordField" layoutX="24.0" layoutY="215.0" prefHeight="26.0" prefWidth="182.0" promptText="Contraseña" style="-fx-border-color: #f24e1e;" />
+            <ImageView id="lockImageView" fitHeight="94.0" fitWidth="103.0" layoutX="68.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Images/Diseño_sin_título-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button id="loginButton" layoutX="29.0" layoutY="301.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: #f24e1e;" text="Acceder" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button id="cancelarButton" layoutX="29.0" layoutY="337.0" mnemonicParsing="false" onAction="#cancelarButtonOnAction" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: #f24e1e;" text="Cancelar" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Label id="loginMessageLabel" layoutX="25.0" layoutY="251.0" prefHeight="40.0" prefWidth="181.0" text="Credenciales incorrectas, pruebe otra vez" textAlignment="CENTER" wrapText="true" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>
